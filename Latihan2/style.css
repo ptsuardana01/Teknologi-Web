@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========== Container ========== */
+main {
+    height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+h1, h2, h3, h4 {
+    color: #426696;
+}
+
+
+/* ========== Glass Efect ========== */
+.glass {
+    min-height: 80vh;
+    width: 80%;
+    background: white;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.2)
+    );
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter: blur(1rem);
+    display: flex;
+}
+
+.circle1, 
+.circle2 {
+    background: white;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.circle1 {
+    top: 5%;
+    right: 3%;
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 3%;
+}
+
+.circle3 {
+    background: white;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: 1%;
+    left: 7%;
+}
+
+
+
+/* ========== Contact ========== */
+.contact {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    justify-content: space-evenly;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    justify-content: space-around;
+}
+
+.desc p i {
+    font-size: smaller;
+}
+
+.links {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.link {
+    padding: 1rem;
+    word-spacing: 15px;
+}
+
+.link img {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+#home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#home a {
+    text-decoration: none;
+    font-family: 'Rampart One', cursive;
+    position: absolute;
+    left: 40%;
+    color: #426696;
+}
+
+/* ========== Form ========== */
+.forms {
+    flex: 2;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.2)
+    );
+    border-radius: 2rem;
+    padding: 3.3rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.forms input, textarea {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+}
+
+.informations {
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.information {
+    display: flex;
+}
+
+.information img  {
+    padding-right: 1rem;
+}
+
+#submit {
+    width: 4rem;
+    height: 2rem;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(40, 216, 247, 0.7),
+        rgba(255, 255, 255, 0.5)
+    );
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: rgb(11, 182, 250);
+}

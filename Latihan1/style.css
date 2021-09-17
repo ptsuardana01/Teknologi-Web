@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* ========== Container ========== */
+main {
+    height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #426696;
+}
+
+
+
+/* ========== Glass Efect ========== */
+.glass {
+    min-height: 75vh;
+    width: 70%;
+    background: white;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.2)
+    );
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter: blur(1rem);
+    display: flex;
+}
+
+.circle1, 
+.circle2 {
+    background: white;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.circle1 {
+    top: 5%;
+    right: 7%;
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 7%;
+}
+
+.circle3 {
+    top: 1%;
+    left: 7%;
+}
+
+
+.circle3, .circle4 {
+    background: white;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+}
+
+.circle4 {
+    width: 3rem;
+    height: 3rem;
+    right:  50%;
+    bottom: 2%;
+}
+
+
+
+/* ========== Title ========== */
+.title {
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    z-index: 3;
+}
+
+#home {
+    position: absolute;
+    right: 45%;
+    bottom: 5%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+
+}
+
+#home a {
+    text-decoration: none;
+    font-family: 'Rampart One', cursive;
+    color: #426696;
+}
+
+
+/* ========== Profil ========== */
+
+.profil {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.user img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.user h3 {
+    padding-top: 10px;
+}
+
+.skills {
+    display: flex;
+    width: 7.8rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill {
+    width: 100%;
+    height: 2rem;
+}
+
+.progress {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after {
+    content: '';
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 60%;
+}
+
+.skill p {
+    font-size: small;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links h4 {
+    padding-bottom: 1rem;
+}
+
+.link img {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
+/* ========== Biodata ========== */
+.biodata {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-left: 3.5rem;
+}
+
+
+

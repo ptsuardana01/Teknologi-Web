@@ -1,7 +1,7 @@
 <template>
   <div class="keranjang-belanja">
     <Navbar />
-    <h1>This is an keranjang belanja</h1>
+    <keranjangBody />
   </div>
 </template>
 

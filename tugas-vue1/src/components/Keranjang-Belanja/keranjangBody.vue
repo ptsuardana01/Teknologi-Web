@@ -96,7 +96,16 @@
       <h3 class="pt-3 pb-4 text-center">Dalam Keranjang</h3>
       <table class="">
         <thead>
-          <tr class="text-md font-semibold tracking-wide text-center border-b shadow">
+          <tr
+            class="
+              text-md
+              font-semibold
+              tracking-wide
+              text-center
+              border-b
+              shadow
+            "
+          >
             <th class="bg-white text-center p-3">ID</th>
             <th class="bg-white text-center p-3">Barang</th>
             <th class="bg-white text-center p-3">Tipe</th>
@@ -135,7 +144,8 @@
                   rounded-full
                   bg-red-400
                   text-white
-                  hover:bg-red-600"
+                  hover:bg-red-600
+                "
                 @click="handleMinButton(item.id)"
                 type="button"
               >
@@ -167,13 +177,27 @@
             </td>
             <td class="border text-center">
               <button
-                class="py-1 px-2 text-sm text-white bg-red-500 hover:bg-red-600 rounded-full"
+                class="
+                  py-1
+                  px-2
+                  text-sm text-white
+                  bg-red-500
+                  hover:bg-red-600
+                  rounded-full
+                "
                 v-on:click="products.splice(index, 1)"
               >
                 Remove
               </button>
               <button
-                class="py-1 px-6 text-sm text-white bg-green-500 hover:bg-green-600 rounded-full"
+                class="
+                  py-1
+                  px-6
+                  text-sm text-white
+                  bg-green-500
+                  hover:bg-green-600
+                  rounded-full
+                "
                 v-on:click="editProduct(index, item)"
               >
                 Edit
